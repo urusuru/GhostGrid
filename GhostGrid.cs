@@ -128,7 +128,7 @@ public class GhostGrid : MonoBehaviour
             childrenCount = children.Length;
 
             for (int i = 0; i < childrenCount; i++)
-                children[i].position = GetSnapVector(children[i].position, gridSize);
+                children[i].localPosition = GetSnapVector(children[i].localPosition, gridSize);
         }
     }
 
